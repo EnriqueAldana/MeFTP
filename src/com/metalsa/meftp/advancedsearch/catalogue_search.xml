@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <package name="meftpUsersSearch" namespace="/meftpUsersSearch" extends="json-default">
+   		<action name="advancedSearch" method="advancedSearch" class="com.metalsa.meftp.advancedsearch.UserSearchAction">
+   			<result type="json">
+   			</result>
+   		</action>
+   		<action name="dateSearch" method="dateSearch" class="com.metalsa.meftp.advancedsearch.UserSearchAction">
+   			<result type="json">
+   			</result>
+   		</action>
+   	
+   </package>
+   
+</struts> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="meftpLogInService" location="10,10" size="180,121">
+    <action name="login" location="23,31" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="MeFTP_Administration.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="MeFTPLogin.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="MeftpUpload.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="MeFTPLogin.jsp" path="/MeFTPLogin.jsp" location="79,175" size="150,55" />
+  <webResource name="index.jsp" path="/MeftpJsp/index.jsp" location="300,81" size="150,55" />
+  <webResource name="MeFTP_Administration.jsp" path="/MeftpJsp/Administration/MeFTP_Administration.jsp" location="500,50" size="150,55" />
+  <webResource name="MeFTPClientWindow.jsp" path="/MeftpJsp/Client/MeFTPClientWindow.jsp" location="447,161" size="150,55" />
+  <webResource name="MeftpUpload.jsp" path="/MeftpJsp/MeftpUploadExt/MeftpUpload.jsp" location="247,225" size="150,55" />
+</Struts2Diagram>
+

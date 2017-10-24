@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+		<!--
+				The package element provides a mechanism by which to group related
+				Struts 2 components, such as actions and results, into logical units.  
+				A more natural grouping	for real world applications would be by more functional aspects. 
+				Invoke MedsUserAction_add.action for example
+				http://localhost:8080/MeFTPServer/meftpServerAdmin/MeftpServer_start.action
+				http://localhost:8080/MeFTPServer/meftpServerAdmin/MeftpServer_stop.action
+				
+		-->
+    <package name="meftpServerAdmin" namespace="/meftpServerAdmin" extends="struts-default">
+			<action name="MeftpServer_*" method="{1}" class="com.metalsa.meftp.administration.MeFTPServer">
+				<result name="started">/MeftpJsp/Administration/MeFTP_StartedServer.jsp</result>
+				<result name="stopped">/MeftpJsp/Administration/MeFTP_StoppedServer.jsp</result>
+				<result name="error">/MeftpJsp/Administration/MeFTP_Error.jsp</result>
+			</action>
+   </package>
+
+</struts>

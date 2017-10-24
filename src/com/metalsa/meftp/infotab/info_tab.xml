@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <package name="getInfoTab" namespace="/getInfoTab" extends="struts-default">
+   	
+	<action name="infoTab" method="getProperties" class="com.metalsa.meftp.infotab.RefreshPropertiesAction">
+   			<result type="stream">
+   		<param name="inputName">inputStream</param>
+   		</result>
+   		</action>
+   </package>
+   
+</struts> 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <package name="meftpSubgroupsActions" namespace="/meftpSubgroupsActions" extends="struts-default">
+   	
+   		<action name="add" method="add" class="com.metalsa.meftp.subgroup.MeFTPSubgroupsAction">
+   			<result name="success">/MeftpJsp/Administration/MeFTP_Administration.jsp</result>
+   		</action>
+   	
+   		<action name="delete" method="delete" class="com.metalsa.meftp.subgroup.MeFTPSubgroupsAction">
+   			<result name="success">/MeftpJsp/Administration/MeFTP_Administration.jsp</result>
+   		</action>
+   	
+   		<action name="edit" method="edit" class="com.metalsa.meftp.subgroup.MeFTPSubgroupsAction">
+   			<result name="success">/MeftpJsp/Administration/MeFTP_Administration.jsp</result>
+   		</action>
+   	
+   </package>
+   
+   <package name="meftpSubgroupsSearchActions" namespace="/meftpSubgroupsSearchActions" extends="json-default">
+   		<action name="advancedSearch" method="advancedSearch" class="com.metalsa.meftp.subgroup.MeFTPSubgroupsAction">
+   			<result type="json"></result>
+   		</action>
+   </package>
+   
+   
+</struts>

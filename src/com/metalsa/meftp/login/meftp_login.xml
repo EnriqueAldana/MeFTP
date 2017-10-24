@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>   
+   <package name="meftpLogInService" namespace="/meftpLogInService" extends="json-default">
+   		<action name="login" method="loginService" class="com.metalsa.meftp.login.MeFTPLogInAction">
+   		<result name="success" type="stream">
+   			<param name="inputName">inputStream</param>
+   			
+   		</result>
+   		<result name="input" type="stream">
+   		<param name="inputName">inputStream</param>
+   			</result>
+   		<result name="error" type="stream">
+   			<param name="inputName">inputStream</param>
+   		</result>
+   			<!--  <result name="success">
+   			/MeftpJsp/Administration/MeFTP_Administration.jsp
+   			</result>
+   			<result name="error" type="redirect">
+   				/MeFTPLogin.jsp
+   			</result>
+   			-->
+   		</action>
+   </package>
+</struts>

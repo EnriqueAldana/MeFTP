@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<!--
+   			For the purposes of the book, we will leave devMode set to true.  This
+   			allows several things to occur including provision of debugging level information
+   			on error pages as well as reloading of various resources with each request.
+   --> 
+   <constant name="struts.devMode" value="false" />
+ 		<!-- 
+			You can define packages directly in this file, but its probably best
+		   	to modularize the configuration files with separate xml files for each
+		   	package.  Ulitmately its all the same because the include element, seen
+		   	below, pulls the included configuration document directly in to the 
+		   	primary document.  The only thing to consider is that a referenced
+		   	element must have been declared above the referring element.         
+		-->
+		
+		<!-- 
+				This is the menu action that will allow the reader to see the different
+				samples actions from the different chapters in a menu format.  We declare
+				it here, in the root namespace, because its not really related to any of the
+				specific examples or chapters, its just a kind of utility for the whole 
+				application.
+		-->	
+	 <include file="/MedsError.xml"/>
+    <include file="com/metalsa/meftp/administration/meftp_administration.xml"/>
+    <include file="com/metalsa/meftp/user/meftp_users.xml"/>
+	<include file="com/metalsa/meftp/subgroup/meftp_subgroups.xml"/>
+	<include file="com/metalsa/meftp/groups/meftp_groups.xml"/>
+	<include file="com/metalsa/meftp/advancedsearch/catalogue_search.xml"/>
+	<include file="com/metalsa/meftp/infotab/info_tab.xml"/>
+	<include file="com/metalsa/meftp/login/meftp_login.xml"/>
+	<include file="com/metalsa/meftp/journaltab/meftp_journal.xml"/>
+	<include file="com/metalsa/testUpload/meftp_uploadFile.xml"/>
+	<include file="com/metalsa/meftp/configurationtab/meftp_configurationtab.xml"/>
+	<include file="com/metalsa/meftp/upload/meftp_upload.xml"/>
+	
+</struts>    

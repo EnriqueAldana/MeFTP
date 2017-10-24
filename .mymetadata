@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MeFTPServer"
+  id="myeclipse.1319140647715"
+  context-root="/MeFTPServer"
+  j2ee-spec="6.0"
+  archive="MeFTPServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

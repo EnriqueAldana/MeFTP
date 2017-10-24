@@ -1,0 +1,10 @@
+	//public static final String VERSION="Version 1 - 24 Oct 2011";
+	// Fix for star and stop server
+	//public static final String VERSION="Version 1.1 - 26 Oct 2011";
+	// Se implemento carga de usuarios desde la BD incluida
+	public static final String VERSION="Version 1.2 - 11 Nov 2011";
+	TODO
+	Fix. 
+	A) Al bajar el servidor se debe Cerrar conexiones de la base de datos para que guarde los datos de forma segura
+	B) Ajustar los datos duros de la implementacion de la BD interna incluyendolos en el archivo de propiedades
+	

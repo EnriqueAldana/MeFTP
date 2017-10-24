@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <include file="meftp_administration.xml" location="10,10" size="150,30" />
+  <include file="meftp_upload.xml" location="19,115" size="150,30" />
+  <include file="meftp_upload.xml" location="19,115" size="150,30" />
+  <include file="meftp_users.xml" location="19,325" size="150,30" />
+  <include file="meftp_subgroups.xml" location="19,430" size="150,30" />
+  <include file="meftp_groups.xml" location="19,535" size="150,30" />
+  <include file="catalogue_search.xml" location="19,640" size="150,30" />
+  <include file="info_tab.xml" location="19,745" size="150,30" />
+  <include file="meftp_login.xml" location="19,850" size="150,30" />
+  <include file="meftp_journal.xml" location="280,235" size="150,30" />
+  <include file="meftp_uploadFile.xml" location="369,99" size="150,30" />
+</Struts2Diagram>
+
